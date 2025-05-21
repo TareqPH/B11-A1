@@ -1,95 +1,126 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f8f8f8;
-  color: #333;
-}
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem;
-}
-.hero {
-  background: #d0f0e0;
-  text-align: center;
-  padding: 3rem 1rem;
-}
-.hero-img {
-  width: 120px;
-}
-.hero button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-}
-.pillars h2, .vision h2, .opinion h2, .news h2, .donate h2, .newsletter h2 {
-  margin-bottom: 1rem;
-}
-.pillars-grid, .vision-cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.pillar, .card {
-  background: #fff;
-  padding: 1rem;
-  flex: 1;
-  text-align: center;
-  border-radius: 8px;
-}
-.card button {
-  margin-top: 0.5rem;
-}
-.testimonial {
-  font-style: italic;
-  background: #fff;
-  padding: 1rem;
-  margin: 2rem 0;
-}
-.opinion table {
-  width: 100%;
-  border-spacing: 0 1rem;
-}
-.opinion td button {
-  padding: 0.4rem 1rem;
-}
-.news-card {
-  display: flex;
-  gap: 1rem;
-  background: #fff;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-.news-card img {
-  width: 150px;
-}
-.donate .amounts button {
-  margin-right: 1rem;
-}
-.donate .amounts .active {
-  background: #b2eac6;
-}
-.donate input {
-  margin: 1rem 0;
-  padding: 0.5rem;
-  width: 100%;
-}
-.newsletter {
-  background: #cfeede;
-  padding: 2rem;
-  text-align: center;
-}
-.newsletter input {
-  padding: 0.5rem;
-  margin-right: 0.5rem;
-}
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background: #fff;
-}
-.footer .socials img {
-  height: 24px;
-  margin: 0 5px;
-}
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f8f8f8;
+      color: #333;
+    }
+    header, footer, section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      background-color: #d5f2e8;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero button {
+      background: #05694e;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .pillars, .vision-cards, .opinion, .news, .donate, .subscribe {
+      margin-top: 2rem;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1 1 calc(25% - 1rem);
+      min-width: 200px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+    .opinion table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .opinion td, .opinion th {
+      padding: 1rem;
+      border: 1px solid #ddd;
+    }
+    .news-card {
+      display: flex;
+      background: white;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      gap: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .news-card img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .donate-buttons button {
+      background: #eee;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .donate input {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .donate .submit-btn {
+      background: #05694e;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .subscribe input[type=email] {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 250px;
+    }
+    .subscribe button {
+      background: #05694e;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+      padding-bottom: 3rem;
+    }
