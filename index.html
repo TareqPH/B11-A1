@@ -1,18 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assaignment1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangladesh 2.0</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f8f8f8;
+      color: #333;
+    }
+    header, footer, section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      background-color: #d5f2e8;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero button {
+      background: #05694e;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .pillars, .vision-cards, .opinion, .news, .donate, .subscribe {
+      margin-top: 2rem;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1 1 calc(25% - 1rem);
+      min-width: 200px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+    .opinion table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .opinion td, .opinion th {
+      padding: 1rem;
+      border: 1px solid #ddd;
+    }
+    .news-card {
+      display: flex;
+      background: white;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      gap: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .news-card img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .donate-buttons button {
+      background: #eee;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .donate input {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .donate .submit-btn {
+      background: #05694e;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .subscribe input[type=email] {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 250px;
+    }
+    .subscribe button {
+      background: #05694e;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+      padding-bottom: 3rem;
+    }
+  </style>
 </head>
-<h2>Bangladesh 2.0</h2>
 <body>
-    <div>
-        <p>Bangladesh 2.0</p>
-        <h1>Idea , innovation ,
-vision and challenges in New Bangladesh.</h1>
-<button>Explore New Bangladesh</button>
-<img src="../B11A1--assignment-1/Bangladesh 2.0.png" alt="">
+  <header class="hero">
+    <h1>Idea , innovation , vision and challenges in New Bangladesh.</h1>
+    <button>Explore New Bangladesh</button>
+  </header>
+
+  <section class="pillars">
+    <h2 class="section-title">Pillars of "Bangladesh 2.0"</h2>
+    <div class="cards-container">
+      <div class="card">
+        <h3>Innovation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+      <div class="card">
+        <h3>Sustainability</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+      <div class="card">
+        <h3>Infrastructure</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+      <div class="card">
+        <h3>Empowerment</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
     </div>
+  </section>
+
+  <section class="vision">
+    <h2 class="section-title">The Vision of Future</h2>
+    <p>Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability.</p>
+    <div class="cards-container vision-cards">
+      <div class="card">
+        <h3>Digital Transformation</h3>
+        <p>Creating a digital ecosystem for access and inclusion.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Green Energy</h3>
+        <p>Investing in solar and wind to ensure eco-friendly future.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Modern Infrastructure</h3>
+        <p>Building world-class infrastructure for growth.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="opinion">
+    <h2 class="section-title">Your Opinion Matters</h2>
+    <table>
+      <tr>
+        <th>Questions</th>
+        <th>Select Your Opinion</th>
+      </tr>
+      <tr>
+        <td>Do you believe Bangladesh is on the right path toward becoming a developed nation?</td>
+        <td><button>Yes, I Agree</button></td>
+      </tr>
+      <tr>
+        <td>Do you believe Bangladesh is on the right path toward becoming a developed nation?</td>
+        <td><button>Yes, I Agree</button></td>
+      </tr>
+      <tr>
+        <td>Do you believe Bangladesh is on the right path toward becoming a developed nation?</td>
+        <td><button>Yes, I Agree</button></td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="news">
+    <h2 class="section-title">Recent News</h2>
+    <div class="news-card">
+      <img src="https://via.placeholder.com/150" alt="Satellite">
+      <div>
+        <h3>Bangladesh Launches New Satellite</h3>
+        <p>ALJAZEERA · 05/01/2025 · 10:25 PM</p>
+        <p>Not until the creation and maintenance of decent conditions of life...</p>
+        <button>Read More</button>
+      </div>
+    </div>
+    <div class="news-card">
+      <img src="https://via.placeholder.com/150" alt="Satellite">
+      <div>
+        <h3>Bangladesh Launches New Satellite</h3>
+        <p>ALJAZEERA · 05/01/2025 · 10:25 PM</p>
+        <p>Not until the creation and maintenance of decent conditions of life...</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="donate">
+    <h2 class="section-title">Donate Today</h2>
+    <div class="donate-buttons">
+      <button>100 Taka</button>
+      <button style="background:#cceadd;">200 Taka</button>
+      <button>500 Taka</button>
+      <button>1000 Taka</button>
+    </div>
+    <input type="text" placeholder="Other Amount (Taka)">
+    <button class="submit-btn">Done Now</button>
+  </section>
+
+  <section class="subscribe">
+    <h2 class="section-title">Subscribe Newsletter</h2>
+    <p>Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth.</p>
+    <input type="email" placeholder="Enter your email here">
+    <button>Subscribe</button>
+    <p style="font-size: 0.8rem; margin-top: 0.5rem;">We promise not to spam you!</p>
+  </section>
+
+  <footer>
+    <p>Bangladesh 2.0</p>
+  </footer>
 </body>
 </html>

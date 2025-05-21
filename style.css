@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+.hero {
+  background: #d0f0e0;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.hero-img {
+  width: 120px;
+}
+.hero button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+.pillars h2, .vision h2, .opinion h2, .news h2, .donate h2, .newsletter h2 {
+  margin-bottom: 1rem;
+}
+.pillars-grid, .vision-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.pillar, .card {
+  background: #fff;
+  padding: 1rem;
+  flex: 1;
+  text-align: center;
+  border-radius: 8px;
+}
+.card button {
+  margin-top: 0.5rem;
+}
+.testimonial {
+  font-style: italic;
+  background: #fff;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+.opinion table {
+  width: 100%;
+  border-spacing: 0 1rem;
+}
+.opinion td button {
+  padding: 0.4rem 1rem;
+}
+.news-card {
+  display: flex;
+  gap: 1rem;
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.news-card img {
+  width: 150px;
+}
+.donate .amounts button {
+  margin-right: 1rem;
+}
+.donate .amounts .active {
+  background: #b2eac6;
+}
+.donate input {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+.newsletter {
+  background: #cfeede;
+  padding: 2rem;
+  text-align: center;
+}
+.newsletter input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+}
+.footer .socials img {
+  height: 24px;
+  margin: 0 5px;
+}
